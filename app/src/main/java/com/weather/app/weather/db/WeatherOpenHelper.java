@@ -9,9 +9,9 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class WeatherOpenHelper extends SQLiteOpenHelper{
 
-    public static final String create_province = "create table Province (" + "id integer primary key autoincrement," +"province_name text, "+"province_code text";
+    public static final String create_province = "create table Province (" + "id integer primary key autoincrement," +"province_name text, "+"province_code text)";
 
-    public static final String create_city = "create table City ("+"id integer primary key autoincrement, "+"city_name text"+"city_code text, "+"province_id integer)";
+    public static final String create_city = "create table City ("+"id integer primary key autoincrement, "+"city_name text, "+"city_code text, "+"province_id integer)";
 
     public static final String create_county = "create table County ("+"id integer primary key autoincrement, "+"county_name text, "+"county_code text, "+"city_id integer)";
 
